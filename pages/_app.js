@@ -1,19 +1,19 @@
-import '../styles/globals.css'
-import GithubLink from '../components/clerk/GithubLink.tsx'
-import { ClerkProvider } from '@clerk/nextjs'
+import "../styles/globals.css";
+import GithubLink from "../components/clerk/GithubLink.tsx";
+import { ClerkProvider } from "@clerk/nextjs";
 
 function ClerkSupabaseApp({ Component, pageProps }) {
   return (
     <ClerkProvider>
       <Component {...pageProps} />
       <footer>
-        <GithubLink
+        {/* <GithubLink
           label="'Clerk+Supabase' showcases Clerk components w/ a Supabase backend"
           repoLink="https://github.com/clerkinc/clerk-supabase"
-        />
+        /> */}
       </footer>
     </ClerkProvider>
-  )
+  );
 }
 
-export default ClerkSupabaseApp
+export default ClerkSupabaseApp;
